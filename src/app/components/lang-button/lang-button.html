@@ -1,0 +1,21 @@
+<div class="lang-button-wrapper" [class.open]="open">
+    <button class="lang-btn" aria-haspopup="true" aria-expanded="{{open}}" (click)="toggle()" title="{{ 'cambiarIdioma' | translate }}">
+    <span class="flag">{{ currentFlag }}</span>
+    </button>
+
+    @if(open){
+        <ul class="lang-dropdown" role="menu">
+        @for (l of languages; track l.code) {
+            <li role="menuitem">
+            <button class="lang-item" (click)="change(l.code)">
+            <span class="flag">{{ l.flag }}</span>
+            <span class="label">{{ l.label }}</span>
+            @if(l.code === current){
+                <span class="check">✓</span>
+            }
+            </button>
+            </li>
+        }
+        </ul>
+    }
+</div>

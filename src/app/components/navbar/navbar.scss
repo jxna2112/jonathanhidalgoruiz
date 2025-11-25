@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #010048;
+  color: white;
+  position: fixed;//Aqui se hace para que el navbar quede fijado y se mantenga durante todo el recorrido de la web
+  width: 100%;
+  height: 70px;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.logo img {
+  height: 60px;
+  width: 60px;
+}
+
+.menu {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-overlay {
+  position: fixed;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: #020072;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  z-index: 999;
+}
+
+/* Cuando se activa */
+.dropdown-overlay.show {
+  top: 0; /* desliza desde arriba */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-overlay ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-overlay li {
+  margin: 1rem 0;
+}
+
+.dropdown-overlay li a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.dropdown-overlay li a:hover {
+  color: rgb(193, 193, 193);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+.hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.hamburger-btn:hover span {
+  background: #ccc;
+}

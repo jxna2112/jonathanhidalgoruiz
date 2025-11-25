@@ -1,0 +1,91 @@
+.sobre-mi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.sobre-mi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+}
+
+/* Bloque foto */
+.foto {
+  width: 490px;
+  height: 450px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%; /* circular */
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* Halo azul fosforito */
+.foto::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.5); /* azul fosforito */
+  filter: blur(25px);
+  z-index: 0;
+}
+
+/* Bloque info */
+.info {
+  width: 490px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
+.letraInfo {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.negrita {
+  color: #00ffff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sobre-mi-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .info {
+    text-align: center;
+  }
+}

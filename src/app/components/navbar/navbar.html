@@ -1,0 +1,25 @@
+<nav class="navbar">
+  <div class="logo">
+    <a href="">
+        <img src="img/logo.png" alt="MiLogo">
+    </a>
+  </div>
+
+  <div class="menu">
+    <button type="button" class="dropdown-btn hamburger-btn" id="hamburger-btn" (click)="toggleDropdown()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="dropdown-overlay" [class.show]="isDropdownOpen">
+      <ul>
+        <li><a (click)="scrollToSection('sobre-mi')">{{ 'navbar.sobreMi' | translate }}</a></li>
+        <li><a (click)="scrollToSection('tecnologias')">{{ 'navbar.tecnologias' | translate }}</a></li>
+        <li><a (click)="scrollToSection('proyectos-experiencia')">{{ 'navbar.proyectosPersonalesYExperiencia' | translate }}</a></li>
+        <li><a (click)="scrollToSection('contactar')">{{ 'navbar.contacto' | translate }}</a></li>
+      </ul>
+      <button type="button" class="close-btn" (click)="toggleDropdown()">✕</button>
+    </div>
+  </div>
+</nav>

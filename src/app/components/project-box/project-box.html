@@ -1,0 +1,16 @@
+<section>
+<div class="card">
+    <div class="container">
+    @if (image) {
+        <div class="icon-container">
+            <img src="{{image}}" alt="icon" class="icon">
+        </div>
+    }
+    <h3 class="title">{{ title | translate }}</h3>
+    </div>
+
+  <p class="description">
+    {{ description | translate }}
+  </p>
+</div>
+</section>

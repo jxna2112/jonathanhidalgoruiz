@@ -1,0 +1,14 @@
+<section id="contactar">
+<div class="contact-box">
+  <h2>{{"contactar.titulo" | translate}}</h2>
+  <form (ngSubmit)="enviarEmail()" #contactform="ngForm">
+    <input type="text" name="nombre" placeholder="{{'contactar.nombre' | translate}}" [(ngModel)]="formData.nombre" required>
+    <input type="email" name="email" placeholder="{{'contactar.email' | translate}}" [(ngModel)]="formData.email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+    <input type="text" name="empresa" placeholder="{{'contactar.empresa' | translate}}" [(ngModel)]="formData.empresa" required>
+    <textarea name="descripcion" placeholder="{{'contactar.descripcion' | translate}}" [(ngModel)]="formData.descripcion" required></textarea>
+    <button type="submit" [disabled]="!contactform.form.valid">
+      <span class="icon">💾</span> {{'contactar.botonEnviar' | translate}}
+    </button>
+  </form>
+</div>
+</section>

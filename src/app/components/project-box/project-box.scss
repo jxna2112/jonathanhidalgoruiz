@@ -1,0 +1,48 @@
+//Project section styles
+.card {
+  width: 1280px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(145deg, #001f3f, #001f40);
+
+  box-shadow:
+    0 0 6px rgba(0, 255, 255, 0.4),
+    0 0 12px rgba(0, 255, 255, 0.25);
+
+  border: 2px solid rgba(0, 255, 255, 0.7);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 170px;
+  height: 145px;
+  margin-right: 12px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.title {
+  font-size: clamp(24px, 5vw, 36px); /* se adapta al tamaño de pantalla */
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.description {
+    font-size: 28px;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    line-height: 1.5;
+}

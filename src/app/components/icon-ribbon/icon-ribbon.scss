@@ -1,0 +1,43 @@
+.ribbon-wrapper {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.ribbon-track {
+  display: flex;
+  gap: 200px;
+  white-space: nowrap; /* evita que los iconos se rompan de línea */
+  animation: scrollRibbon 10s linear infinite;
+}
+
+.ribbon-track img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0; /* evita que los iconos se compriman */
+}
+
+@keyframes scrollRibbon {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-106.5%); /* mueve exactamente la mitad, ya que duplicamos los iconos */
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ribbon-track img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ribbon-track {
+    gap: 30px;
+  }
+}

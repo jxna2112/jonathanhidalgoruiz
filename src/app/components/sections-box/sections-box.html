@@ -1,0 +1,16 @@
+<section id="proyectos-experiencia">
+<div class="tabs-container">
+    <div class="tabs-header">
+        <button type="button" id="primerBoton" (click)="mostrarSeccionProjects()" [class.active]="sectionProjects">{{ "projects.seccionProyectos" | translate }}</button>
+        <button type="button" (click)="mostrarSeccionExperience()" [class.active]="sectionExperience">{{ "projects.seccionExperiencia" | translate }}</button>
+    </div>
+    <div class="tabs-content">
+        @if (sectionProjects) {
+            <app-project-box  [image]="'img/logo.svg'" [title]="'projects.wecook.titulo'" [description]="'projects.wecook.descripcion'" ></app-project-box>
+        }
+        @if (sectionExperience) {
+            <app-project-box [title]="'projects.experienciaLaboral.empresa1.puesto'" [description]="'projects.experienciaLaboral.empresa1.descripcion'" ></app-project-box>
+        }
+    </div>
+</div>
+</section>

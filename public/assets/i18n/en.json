@@ -1,0 +1,43 @@
+{
+    "cambiarIdioma": "Change language",
+    "navbar": {
+        "sobreMi": "Home",
+        "tecnologias": "Technologies",
+        "proyectosPersonalesYExperiencia": "Projects and Experience",
+        "contacto": "Contact"
+    },
+    "aboutMe": {
+        "puesto": "Web Developer",
+        "parrafo1": "Hello! I am a web developer with a strong background in front-end and back-end development, specializing in building websites and web applications that are not only visually appealing but also highly functional and performance-optimized.",
+        "parrafo2": "I love working with the latest technologies and trends in web development to deliver innovative solutions that exceed my clients' expectations.",
+        "parrafo3": "In addition to my technical skills, I am an effective communicator and an enthusiastic collaborator, always willing to learn and grow in my field. I am excited about the opportunity to contribute to challenging and impactful projects in the digital world."
+    },
+    "tecnologias": {
+        "titulo": "Technologies",
+        "frontend": "Front-end",
+        "backend": "Back-end",
+        "herramientas": "Tools and others"
+    },
+    "projects": {
+        "seccionProyectos": "Personal Projects",
+        "wecook": {
+            "titulo": "TFG-COOKING SOCIAL NETWORK - TFG (LARAVEL + TAILWIND + MYSQL WORKBENCH)",
+            "descripcion": "Web platform with user registration, recipe sharing, post commenting, and following other cooks. With a responsive and attractive design. It also includes user profile editing, a search engine with filters, user blocking, and account banning exclusive to admin mode. With password reset service."
+        },
+        "seccionExperiencia":" Professional Experience",
+        "experienciaLaboral": {
+            "empresa1": {
+                "puesto": "Front-End Web Developer (Internship) - Erdhart Serikat 03/2025-06/2025",
+                "descripcion": "Development of customized websites and web applications for clients using modern technologies such as HTML, CSS, JavaScript, and popular frameworks. Collaboration with designers and other developers to create engaging and functional user experiences."
+            }
+        }
+    },
+    "contactar": {
+        "titulo": "Contact",
+        "nombre": "Full Name *",
+        "empresa": "Company *",
+        "email": "Email *",
+        "descripcion": "Description *",
+        "botonEnviar": "Send"
+    }
+}

@@ -1,0 +1,77 @@
+.tabs-container {
+  width: 1322px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(145deg, #001f3f, #003b7a);
+
+  box-shadow:
+    0 0 6px rgba(0, 255, 255, 0.4),
+    0 0 12px rgba(0, 255, 255, 0.25);
+
+  border: 2px solid rgba(0, 255, 255, 0.7);
+}
+
+/* CABECERA DE TABS */
+.tabs-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+}
+.tabs-header #primerBoton{
+  border-right: 2px solid #ffffff;
+}
+
+/* BOTONES DE TAB */
+.tabs-header button {
+  width: 50%;
+  padding: 12px 0;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.2s ease, border-bottom 0.25s ease;
+  border-bottom: 3px solid transparent;
+  color: #ffffff;
+}
+
+.tabs-header button:hover {
+  color: #707070;
+}
+
+/* TAB ACTIVO */
+.tabs-header button.active {
+  color: #707070;
+  border-bottom-color: rgba(0, 255, 255, 0.7);
+}
+
+/* CONTENIDO INTERIOR */
+.tabs-content {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 16px;
+}
+
+/* ESTILO DE CADA CAJA app-project-box */
+app-project-box {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover sobre cada caja */
+app-project-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
