@@ -78,14 +78,72 @@
   color: #00ffff;
 }
 
-/* Responsive */
+/* --------- TABLET (≈ 768px a 1024px) --------- */
 @media (max-width: 1024px) {
-  .sobre-mi-container {
-    flex-direction: column;
-    gap: 30px;
+  .foto, .info {
+    width: 300px;
+    height: auto;
+  }
+
+  .info h2 {
+    font-size: 1.8rem;
+  }
+
+  .letraInfo {
+    font-size: 1.1rem;
+  }
+}
+
+/* --------- MÓVIL GRANDE (≈ 600px a 767px) --------- */
+@media (max-width: 767px) {
+  .sobre-mi {
+    padding: 60px 15px;
+  }
+
+  .foto, .info {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .foto img {
+    width: 100%;
+    height: auto;
   }
 
   .info {
     text-align: center;
+    align-items: center;
+  }
+
+  .info h2 {
+    font-size: 1.6rem;
+  }
+
+  .info h3 {
+    font-size: 1rem;
+  }
+
+  .letraInfo {
+    font-size: 1rem;
+  }
+}
+
+/* --------- MÓVIL PEQUEÑO (≤ 480px) --------- */
+@media (max-width: 480px) {
+  .sobre-mi {
+    padding: 40px 10px;
+  }
+
+  .foto, .info {
+    max-width: 280px;
+  }
+
+  .info h2 {
+    font-size: 1.4rem;
+  }
+
+  .letraInfo {
+    font-size: .95rem;
   }
 }

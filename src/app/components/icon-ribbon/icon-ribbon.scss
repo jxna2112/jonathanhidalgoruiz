@@ -10,7 +10,7 @@
 .ribbon-track {
   display: flex;
   gap: 200px;
-  white-space: nowrap; /* evita que los iconos se rompan de línea */
+  white-space: nowrap;
   animation: scrollRibbon 10s linear infinite;
 }
 
@@ -26,18 +26,26 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-106.5%); /* mueve exactamente la mitad, ya que duplicamos los iconos */
+    transform: translateX(-106.5%);
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .ribbon-track img {
-    width: 40px;
-    height: 40px;
-  }
-
   .ribbon-track {
-    gap: 30px;
+    gap: 66.75px;
+  }
+  .ribbon-track img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ribbon-track {
+    gap: 15px;
+  }
+  .ribbon-track img {
+    width: 60px;
+    height: 60px;
   }
 }

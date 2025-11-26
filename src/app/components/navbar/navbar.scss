@@ -9,7 +9,7 @@
   padding: 1rem 2rem;
   background: #010048;
   color: white;
-  position: fixed;//Aqui se hace para que el navbar quede fijado y se mantenga durante todo el recorrido de la web
+  position: fixed;
   width: 100%;
   height: 70px;
   top: 0;
@@ -119,4 +119,74 @@
 
 .hamburger-btn:hover span {
   background: #ccc;
+}
+
+/* ---------- TABLET (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+    height: 65px;
+  }
+
+  .logo img {
+    height: 55px;
+    width: 55px;
+  }
+
+  .dropdown-overlay li a {
+    font-size: 1.4rem;
+  }
+}
+
+/* ---------- MÓVIL GRANDE (≤767px) ---------- */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.8rem 1.2rem;
+    height: 60px;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .hamburger-btn {
+    width: 28px;
+    height: 20px;
+  }
+
+  .dropdown-overlay li a {
+    font-size: 1.3rem;
+  }
+}
+
+/* ---------- MÓVIL PEQUEÑO (≤480px) ---------- */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.7rem 1rem;
+    height: 55px;
+  }
+
+  .logo img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .hamburger-btn {
+    width: 25px;
+    height: 18px;
+  }
+
+  .dropdown-overlay li {
+    margin: 0.8rem 0;
+  }
+
+  .dropdown-overlay li a {
+    font-size: 1.2rem;
+  }
+
+  .close-btn {
+    font-size: 1.8rem;
+    right: 1.5rem;
+  }
 }

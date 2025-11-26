@@ -1,7 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
+  padding: 0;
   background: radial-gradient(circle at center, #1442a5 0%, #000000 70%);
-  height: 100vh;
+  min-height: 100vh; /* Evita problemas en móvil */
+  width: 100%;
   color: white;
+  overflow-x: hidden; /* Evita desbordes horizontales */
+}
+
+html, body {
+  overflow-x: hidden;
 }
