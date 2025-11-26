@@ -1,8 +1,6 @@
 .tabs-container {
   width: 1322px;
-  margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 60px auto;
   border-radius: 14px;
   display: flex;
   flex-direction: column;
@@ -59,7 +57,6 @@
   gap: 16px;
 }
 
-/* ESTILO DE CADA CAJA app-project-box */
 app-project-box {
   display: block;
   width: 100%;
@@ -70,8 +67,86 @@ app-project-box {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover sobre cada caja */
 app-project-box:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 1024px) {
+
+  .tabs-container {
+    padding: 18px;
+    width: auto;
+    margin: 50px 10px;
+  }
+
+  .tabs-header button {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+}
+
+
+/* Móvil grande */
+@media (max-width: 767px) {
+
+  .tabs-container {
+    width: auto;
+    margin: 40px 10px;
+    padding: 16px;
+  }
+
+  .tabs-header {
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .tabs-header #primerBoton {
+    border-right: none;
+    border-bottom: 2px solid white;
+  }
+
+  .tabs-header button {
+    width: 100%;
+    font-size: 20px;
+    padding: 14px 0;
+    border-bottom: 2px solid #fff;
+  }
+
+  .tabs-header button.active {
+    border-bottom-color: rgba(0, 255, 255, 0.7);
+  }
+
+  app-project-box {
+    padding: 15px;
+  }
+
+  .tabs-content {
+    gap: 12px;
+  }
+}
+
+
+/* Móvil pequeño */
+
+@media (max-width: 480px) {
+
+  .tabs-container {
+    width: auto;
+    padding: 12px;
+    margin: 40px 10px;
+  }
+
+  .tabs-header button {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  app-project-box {
+    padding: 12px;
+  }
+
+  .tabs-content {
+    gap: 10px;
+  }
 }

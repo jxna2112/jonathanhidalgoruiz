@@ -6,7 +6,13 @@
             <img src="{{image}}" alt="icon" class="icon">
         </div>
     }
-    <h3 class="title">{{ title | translate }}</h3>
+    @if (enlace) {
+    <a class="enlace" href="{{enlace}}" >
+      <h3 class="title">{{ title | translate }}</h3>
+    </a>
+    }  @else {
+      <h3 class="title">{{ title | translate }}</h3>
+    }
     </div>
 
   <p class="description">

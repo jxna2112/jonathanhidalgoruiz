@@ -11,5 +11,6 @@ export class ProjectBox {
   @Input() image!: string;
   @Input() title!: string;
   @Input() description!: string;
+  @Input() enlace!: string;
 
 }
