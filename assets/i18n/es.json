@@ -1,0 +1,49 @@
+{
+    "cambiarIdioma": "Cambiar idioma",
+    "navbar": {
+        "sobreMi": "Inicio",
+        "tecnologias": "Tecnologias",
+        "proyectosPersonalesYExperiencia": "Proyectos y Experiencia",
+        "contacto": "Contacto"
+    },
+    "aboutMe": {
+        "puesto": "Desarrollador Web",
+        "parrafo1": "¡Hola! Soy un desarrollador web con una sólida formación en desarrollo front-end y back-end, me especializo en construir sitios web y aplicaciones web que no solo son visualmente atractivas, sino también altamente funcionales y optimizadas para el rendimiento.",
+        "parrafo2": "Me encanta trabajar con las últimas tecnologías y tendencias del desarrollo web para ofrecer soluciones innovadoras que superen las expectativas de mis clientes.",
+        "parrafo3": "Además de mis habilidades técnicas, soy un comunicador efectivo y un colaborador entusiasta, siempre dispuesto a aprender y crecer en mi campo. Estoy emocionado por la oportunidad de contribuir a proyectos desafiantes y de impacto en el mundo digital."
+    },
+    "tecnologias": {
+        "titulo": "Tecnologías",
+        "frontend": "Front-end",
+        "backend": "Back-end",
+        "herramientas": "Herramientas y otros"
+    },
+    "projects": {
+        "seccionProyectos": "Proyectos Personales",
+        "wecook": {
+            "titulo": "TFG-RED SOCIAL DE COCINA - TFG (LARAVEL + TAILWIND + MYSQL WORKBENCH)",
+            "descripcion": "Plataforma web con registro de usuarios, compartir recetas, comentar publicaciones y seguir a otros cocineros. Con diseño responsivo y atractivo. Además cuenta con editar perfil del usuario, buscador con filtros, bloqueo entre usuarios y baneo de cuentas exclusivo en el modo administrador. Con servicio de restablecimiento de contraseña."
+        },
+        "seccionExperiencia":" Experiencia Profesional",
+        "experienciaLaboral": {
+            "empresa1": {
+                "puesto": "Desarrollador Web Front-End (Prácticas) - Erdhart Serikat 03/2025-06/2025",
+                "descripcion": "Desarrollo de sitios web y aplicaciones web personalizadas para clientes utilizando tecnologías modernas como HTML, CSS, JavaScript y frameworks populares. Colaboración con diseñadores y otros desarrolladores para crear experiencias de usuario atractivas y funcionales."
+            }
+        }
+    },
+    "contactar": {
+        "titulo": "Contacto",
+        "nombre": "Nombre y apellidos *",
+        "empresa": "Empresa *",
+        "email": "Correo Electrónico *",
+        "descripcion": "Descripción *",
+        "botonEnviar": "Enviar"
+    },
+"frasePrincipal": "Hola, bienvenido a mi web",
+"saludo": "¡Buenos días!",
+"menu": {
+"inicio": "Inicio",
+"contacto": "Contacto"
+}
+}
